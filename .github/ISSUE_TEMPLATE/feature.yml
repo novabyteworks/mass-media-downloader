@@ -1,0 +1,31 @@
+name: Feature request
+description: Something you wish Mass Media Downloader did
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: site
+    attributes:
+      label: Which site?
+      options:
+        - "Pinterest"
+        - "Reddit"
+        - "X"
+        - "Bluesky"
+        - "Tumblr"
+        - "Threads"
+        - "Facebook"
+        - "VSCO"
+        - "Clip & GIF"
+        - "My Library"
+        - "A site you do not support yet"
+  - type: textarea
+    id: wish
+    attributes:
+      label: What would you like it to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What are you trying to get done?
+      description: The job behind the request helps us more than the feature itself.
